@@ -11,7 +11,7 @@ const checkUserCredential = async(email, password) => {
 
     try {
         const user = await getUserByEmail(email)
-        const veryfyPassword = comparePassword(password, user.password) //(pasword_plano, password_encriptado)
+        const veryfyPassword = comparePassword(password, user.password) //(plain_password, encrypted_password)
         if(veryfyPassword){
             return user
         }
@@ -50,10 +50,13 @@ module.exports= checkUserCredential
 // const jwtSecret = require('../../config').api.jwtSecret
 // const {findUserById}= require('../users/users.controllers')
 
+
 // const option = {
 //     jwtFromRequest: ExtractJwt.fromAuthHeaderWithScheme('jwt'),
 //     secretOrKey: jwtSecret
 // }
+
+
 
 // passport.use(
 //     new JwtStrategy(option, async(tokenDecoded, done)=> {
@@ -64,30 +67,14 @@ module.exports= checkUserCredential
 //             }
 //             return done(null, false)
             
+
+
 //         } catch (error) {
 //             return done(error, false)
 //         }
 //     })
 // )
 // module.exports= passport
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // const {getUserByEmail}= require('../users/users.controllers')
 // const {comparePassword} = require('../utils/crypto')
