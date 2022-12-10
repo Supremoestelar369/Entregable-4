@@ -36,3 +36,4 @@ Visualiza datos del usuario logeado
 recuerda enviar en el HEADER HTTP la propiedad {Authorization: JWT tu_token}
 localhost:9000/api/v1/users/me
 
+
