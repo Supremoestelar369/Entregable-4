@@ -39,13 +39,13 @@ const postUser = (req, res) => {
                 stack: err,
                 message: err.message,
                 fields: {
-                    first_name: 'string_flavio',
+                    first_name: 'string_Omar',
                     last_name: 'string',
                     user_name: 'string',
                     email: 'string',
                     password: 'string',
                     age: 'number',
-                    country: 'MXN'
+                    country: 'Pna'
                 }
             })
         })
