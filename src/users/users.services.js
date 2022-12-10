@@ -78,6 +78,7 @@ const deleteUser = (req, res) => {
             } else {
                 res.status(404).json({ message: 'Invalid ID' })
             }
+        
         })
         .catch((err) => {
             res.status(400).json({ message: err.message })
